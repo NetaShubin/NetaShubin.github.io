@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pseudo Code</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Web 2!</h1>
+        <h4>Pseudo Classes and Elements:</h4>
+        <h2>Let's dive deeper into CSS and how it works</h2>
+        <p>If we think of CSS in terms of selectors (the tags), properties (font size, padding, etc.), and values (what you set the properties to), then a typical CSS entry would look like this</p>
+
+        <!--Alt z to make code fit into one page instead of infinite scroll to the right-->
+        <!--Always need to wrap code in pre because of olden times-->
+        <pre>
+            <code>
+                selector {property: value;}
+            </code>
+        </pre>
+        <p>To style the above, we need to add 2 tags together. We call this CSS Combinators</p>
+        
+        <h2>Pseudo Classes:</h2>
+        <p>If we think of CSS in terms of selectors, properties, and values, then pseudo class is an add-on to a selector</p>
+        <pre>
+            <code>
+                selector:class { property: value;}
+            </code>
+        </pre>
+        <h4>Can be used for links</h4>
+        <p>If we want out <a href="#">link</a> to look different, we can add...</p>
+        <pre>
+            <code>a {color: green;}</code>
+        </pre>
+        <p>We can also make our <a href="#" target="_blank">link 2</a> look different in diff scenarios...</p>
+        <ul>
+            <li>:hover</li>
+            <li>:active</li>
+            <li>:visited</li>
+        </ul>
+        <!--each class must have no spaces b/c otherwise taken as part of several classes-->
+        <p>But we can also make a <a class = "specialLink" href="#">new link</a> look different by giving it a class</p>
+
+        <h4>We can use Pseudo Classes on any tag</h4>
+        <div class="hover-div">
+            <p>Here we will add a hover status to our div</p>
+            <p>Anything that has a selector you can add a hover to</p>
+        </div>
+
+        <h4>We can even call on specific selectors depending on their heirarchy (ex: first-child or last-child)</h4>
+
+        <div class="tooltip">
+            <h4>You can also create tooltips with pseudo classes</h4>
+            <h4>hover over me</h4>
+            <p>This is your hidden tooltip</p>
+        </div>
+
+        <h2>Pseudo Elements:</h2>
+        <p class="pseudo-elements">If we think of pseudo classes as add-ons, then pseudo elements are creating new elements from a selector, Ex: change the last letter, etc.</p>
+    </div>
+</body>
+</html>

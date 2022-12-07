@@ -1,0 +1,89 @@
+body {
+    background-color: lightcyan;
+    /*Defines multiple in case first option (default) isn't available*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1, h2, h4 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.container {
+    /*center container*/
+    margin: 0 auto;
+    /*need to give it a width for margin to work*/
+    width: 1000px;
+    padding: 20px;
+    border: 1px solid black;
+    /*centers text in container*/
+    text-align: center;
+}
+
+/*Combines these 2 tags so only style where code tag is in pre tag*/
+pre code {
+    background-color: azure;
+    border: dotted black 1px;
+    /*make div/block it's stretch to edges of screen instead of stopping at text*/
+    display: block;
+    color: black;
+}
+
+/*link is default*/
+a:link {color: green;}
+a:visited {color: darkorchid;}
+a:hover {color: red}
+/*active is only rly used for js when link stays open*/
+a:active {color: darkblue}
+
+a.specialLink {color: orange}
+
+.hover-div {
+    color: white;
+    background-color: lightskyblue;
+    padding: 10px;
+}
+
+/*anything that has a selector you can add a hover to*/
+.hover-div:hover {
+    background-color: darkblue;
+    transition: 2s;
+}
+
+/*find first p tag that is a child of another tag (body doesn't count)*/
+p:first-child {
+    color: red;
+}
+
+p:last-child {
+    font-weight: bold;
+}
+
+.tooltip p {
+    /*make it hidden*/
+    display: none;
+    background-color: yellow;
+    padding: 10px;
+}
+
+.tooltip:hover p{
+    display: block;
+}
+
+/*1 : also works but 2 lets you know we are talking about pseudo elements now*/
+.pseudo-elements::first-letter {
+    color: red;
+}
+
+/*make a sort of div before the div we are in*/
+.pseudo-elements::before {
+    content: "READ ME: ";
+    font-weight: bold;
+}
+
+.pseudo-elements::after {
+    content: " - REMEMBER ME";
+}
