@@ -45,12 +45,12 @@ a.specialLink {color: orange}
     color: white;
     background-color: lightskyblue;
     padding: 10px;
+    transition: 2s;
 }
 
 /*anything that has a selector you can add a hover to*/
 .hover-div:hover {
     background-color: darkblue;
-    transition: 2s;
 }
 
 /*find first p tag that is a child of another tag (body doesn't count)*/
