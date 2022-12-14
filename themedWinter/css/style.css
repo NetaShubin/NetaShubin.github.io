@@ -1,0 +1,73 @@
+body {
+    background-color: aliceblue;
+    color: darkblue;
+}
+
+.star1 {
+    float: left;
+    height: 100px;
+    animation-name: sparkleLeft;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.star2 {
+    float: right;
+    height: 100px;
+    animation-name: sparkleLeft;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes sparkleLeft {
+    0% {
+        transform: rotateY(0deg);
+    }
+    25% {
+        transform:rotateY(90deg);
+    }
+    50% {
+        transform:rotateY(180deg);
+    }
+    75% {
+        transform:rotateY(270deg);
+    }
+    100% {
+        transform:rotateY(360deg);
+    }
+}
+
+div {
+    background-color: white;
+    margin: 20px 25%;
+    padding: 10px;
+}
+
+h1 {
+    -webkit-text-stroke: 1px rgb(250, 186, 67);
+}
+
+img {
+    height: 400px;
+}
+
+button {
+    border: rgb(250, 186, 67) double;
+    border-radius: 10%;
+    background-color: white;
+    padding: 15px;
+}
+ 
+a {
+    text-decoration: none;
+    color: darkblue;
+    font-size: medium;
+}
+
+a:hover {
+    color: darkblue;
+}
