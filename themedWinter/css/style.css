@@ -6,7 +6,7 @@ body {
 .star1 {
     float: left;
     height: 100px;
-    animation-name: sparkleLeft;
+    animation-name: sparkle;
     animation-duration: 5s;
     animation-delay: 0s;
     animation-iteration-count: infinite;
@@ -16,14 +16,14 @@ body {
 .star2 {
     float: right;
     height: 100px;
-    animation-name: sparkleLeft;
+    animation-name: sparkle;
     animation-duration: 5s;
     animation-delay: 0s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
-@keyframes sparkleLeft {
+@keyframes sparkle {
     0% {
         transform: rotateY(0deg);
     }
@@ -47,12 +47,12 @@ div {
     padding: 10px;
 }
 
-h1 {
-    -webkit-text-stroke: 1px rgb(250, 186, 67);
-}
-
 img {
     height: 400px;
+}
+
+h1 {
+    -webkit-text-stroke: 1px rgb(250, 186, 67);
 }
 
 button {
@@ -66,8 +66,13 @@ a {
     text-decoration: none;
     color: darkblue;
     font-size: medium;
+    font-family: cursive;
 }
 
 a:hover {
     color: darkblue;
+}
+
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
