@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>HTML and CSS Responsive Demo</title>
+
+    <style>
+        /*Most of the following code taken from transition demo*/
+        .box {
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            background-color: green;
+            /*to center set margin to auto*/
+            /*margin: top right bottom left defines for each side separately*/
+            /*if only give one, applies to all sides; if give two, one for topBottom and other for leftRight*/
+            margin: 40px auto;
+            /*css for animation*/
+            animation-name: square-to-circle;
+            animation-duration: 2s;
+            /*give delay to give time for page to load fully first*/
+            animation-delay: .5s;
+            /*how many times animation should occur*/
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            /*so goes both from square to circle and circle to square instead of just snapping back to square*/
+            animation-direction: alternate;
+        }
+
+        .jail {
+            width: 30%;
+            float: left;
+            margin-left: 0%;
+            padding: 5%;
+            animation-name: left-to-right;
+            animation-duration: 5s;
+            /*give delay to give time for page to load fully first*/
+            animation-delay: .5s;
+            /*how many times animation should occur*/
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            /*so goes both from square to circle and circle to square instead of just snapping back to square*/
+            animation-direction: alternate;
+        }
+
+        @keyframes left-to-right{
+            /*at 0% (when it starts loading)*/
+            0% {
+                margin-left: 0%;
+            }
+            /*at 25%, start doing smth*/
+            25% {
+                margin-left: 30%;
+            }
+
+            50% {
+                margin-left: 40%;
+            }
+
+            75% {
+                margin-left: 50%;
+            }
+
+            100% {
+                margin-left: 68%;
+            }
+        }
+
+        @keyframes square-to-circle{
+            /*at 0% (when it starts loading)*/
+            0% {
+                /*give higher number to border radius to make rounded corners*/
+                border-radius: 0;
+                background-color: green;
+                transform: rotate(0deg);
+                transform-origin: 0px;
+            }
+            /*at 25%, start doing smth*/
+            25% {
+                border-radius: 50% 0 0 0;
+                background-color: darkcyan;
+                transform: rotate(45deg);
+                transform-origin: top;
+            }
+
+            50% {
+                border-radius: 50% 50% 0 0;
+                background-color: purple;
+                transform: rotate(90deg);
+                transform-origin: right;
+            }
+
+            75% {
+                border-radius: 50% 50% 50% 0;
+                background-color: darkblue;
+                transform: rotate(135deg);
+                transform-origin: left;
+            }
+
+            100% {
+                border-radius: 50%;
+                background-color: darkgreen;
+                transform: rotate(180deg);
+                transform-origin: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>I'm lonely... talk with me!</h1>
+        </div>
+
+        <div class="myNav">
+            <div class="nav">
+                <a href="index.html">Home</a>
+                <a href="crazy.html">Wacko</a>
+                <a href="aboutUs.html">About Us</a>
+                <a href="contactUs.html">Contact Us</a>
+            </div>
+        </div>
+        
+        <div class = "jail">
+            <!--Can type div.box and enter to auto write-->
+            <div class="box">
+                <img src="images/Smiley.png" alt="smiley face" style="width: 20%; padding-top: 40%;">
+            </div>
+        </div>
+        <div class="footer">
+            <footer>Web 2 &copy; 2023</footer>
+        </div>
+    </div>
+    
+</body>
+</html>

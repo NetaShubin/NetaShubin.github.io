@@ -1,0 +1,62 @@
+* {
+    /*star selects everything*/
+    /*allows us to add padding without moving it to a new row*/
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color:darkblue;
+}
+
+.header {
+    background-color: aquamarine;
+    text-align: center;
+    padding: 10px;
+}
+
+.myNav {
+    float: left;
+    width: 100%;
+    background-color: lightblue;
+    text-align: center;
+    padding: 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    /*stacks them top to bottom instead of left to right*/
+    text-align: center;
+    width: 100%;
+    padding: 5%;
+}
+
+.footer {
+    background-color: darkgray;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    /*if you see a float, don't ignore it*/
+    clear: both;
+}
+
+footer {
+    /*center footer*/
+    margin: 0 auto;
+}
+
+/*if it has a min width of 621 and max width of 1000...*/
+@media (min-width:621px) and (max-width:1000px) {
+    .nav a {
+        padding: 3%;
+    }
+}
+
+/*from the smallest screen to width of 620px...*/
+@media only screen and (max-width:620px){
+    .nav a {
+        padding: 1%;
+    }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>HTML and CSS Responsive Demo</title>
+
+    <style>
+        .main {
+            float: left;
+            width: 100%;
+            background-color: cornflowerblue;
+            color:white;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .left {
+            float: left;
+            width: 48%;
+            background-color: lightskyblue;
+            color:blueviolet;
+            margin-right: 4%;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .right {
+            float: left;
+            width: 48%;
+            background-color: lightskyblue;
+            color:blueviolet;
+            text-align: center;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        /*if it has a min width of 621 and max width of 1000...*/
+        @media (min-width:621px) and (max-width:1000px) {
+            .main {
+                width: 80%;
+            }
+
+            .left {
+                width: 48%;
+                margin-right: 4%;
+            }
+
+            .right {
+                width: 48%;
+            }
+        }
+
+        /*from the smallest screen to width of 620px...*/
+        @media only screen and (max-width:620px){
+            .left, .main, .right {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Time to go crazy!!!</h1>
+        </div>
+
+        <div class="myNav">
+            <div class="nav">
+                <a href="index.html">Home</a>
+                <a href="crazy.html">Wacko</a>
+                <a href="aboutUs.html">About Us</a>
+                <a href="contactUs.html">Contact Us</a>
+            </div>
+        </div>
+
+        <div class="main">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit vel expedita voluptate molestias ullam. Atque porro quae sunt qui unde, nam quidem nulla repudiandae ratione ex pariatur, excepturi doloribus quas.</p>
+        </div>
+
+        <div class="left">
+            <h3>Why Us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, similique! Fuga cupiditate nihil mollitia cum, minima repellendus, deleniti provident laborum natus debitis dolores pariatur inventore consequatur numquam distinctio doloribus et? Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        </div>
+
+        <div class="right">
+            <h3>Party Time!</h3>
+            <img src="images/Smiley.png" alt="smiley face" style = "width: 15%">
+        </div>
+
+        <div class="footer">
+            <footer>Web 2 &copy; 2023</footer>
+        </div>
+    </div>
+    
+</body>
+</html>
