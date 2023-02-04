@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Using Date/Time with JS</h1>
+    <p>Courtesy of <a href="https://www.digitalocean.com/community/tutorials/understanding-date-and-time-in-javascript" target="_blank">https://www.digitalocean.com/community/tutorials/understanding-date-and-time-in-javascript</a></p>
+    <h3>Let's recall some javascript!</h3>
+    <h4>How do you create a javascript function and link it to an element in HTML?</h4>
+    <ol>
+        <li>Give your element an id</li>
+        <li>Create a button or some sort of action to trigger the javascript function</li>
+        <li>Add the following attribute and value to the element:
+            <pre>
+                <code>
+                    onclick = "function_name()"
+                </code>
+            </pre>
+        </li>
+        <li>In your javascript file (don't forget to link it to your html page), create some function:
+            <pre>
+                <code>
+                    function function_name() {
+                        // Specific action here
+                        // Don't forget semi-colons
+                    }
+                </code>
+            </pre>
+        </li>
+        <li>Get the element you want to change:
+            <pre>
+                <code>
+                    let el = document.getElementById("your_id");
+                </code>
+            </pre>
+        </li>
+        <li>You can change its text (if it is a p tag for example) by saying:
+            <pre>
+                <code>
+                    el.innerHTML = "added text here";
+                </code>
+            </pre>
+        </li>
+    </ol>
+    <!--https://www.digitalocean.com/community/tutorials/understanding-date-and-time-in-javascript-->
+    <h3>Date and Time</h3>
+    <ol>
+        <li>Create a p tag and give it an id called "date"
+            <pre>
+                <code>
+                    &lt;p id = "date"&gt;&lt;p&gt;
+                </code>
+            </pre>
+        </li>
+        <li>Create a button that says "Get Date" and give it an onclick attribute
+            <pre>
+                <code>
+                    &lt;button onclick="getDate()"&gt;Get Date&lt;button&gt;
+                </code>
+            </pre>
+            This means that when the button is clicked, it will call a getDate() function which we will create next
+        </li>
+        <li>Now let's go to our script.js file and write the following:
+            <pre>
+                <code>
+                    function getDate() {
+                        // Get the "date" element we made in step 1
+                        let text = document.getElementById("date");
+                        // Create and set variable to current date and time using the Date() function
+                        const now = new Date();
+                        // Set the content inside the p tag to the date 
+                        text.innerHTML = now;
+                    }
+                </code>
+            </pre>
+        </li>
+    </ol>
+    <p>It should work something like this:</p>
+    <p id = "date"></p>
+    <button onclick="getDate()">Get Date</button>
+    <h3>What else can we do?</h3>
+    <ul>
+        <li>You can get the timestamp in javascript with
+            <pre>
+                <code>
+                    now.getTime();
+                </code>
+            </pre>
+            The timestamp is a value consisting of the number of milliseconds that have passed since midnight on January 1st, 1970! This day is called Epoch.
+        </li>
+        <li>You can get the date given a certain timestamp
+            <pre>
+                <code>
+                    new Date(timestamp);
+                </code>
+            </pre>
+        </li>
+        <li>You can also create the date variable based on a specified date and time
+            <pre>
+                <code>
+                    new Date(year, month, day, hours, minutes, seconds, milliseconds);
+                </code>
+            </pre>
+        </li>
+        <li>You can create your own date variable to, for example, store a birthday
+            <pre>
+                <code>
+                    // Initialize a new birthday instance
+                    const birthday = new Date(1980, 6, 31);
+                </code>
+            </pre>
+        </li>
+        <li>You can also retrieve certain parts of the date with different get() functions
+            <pre>
+                <code>
+                    // Get year
+                    getFullYear();
+
+                    // Get month (0-11, where 0 is January)
+                    getMonth();
+
+                    // Get the day of the month (1-31)
+                    getDate();
+
+                    // Day of the week (0-6, where 0 is Sunday)
+                    getDay();
+
+                    // Get the hour (0-23, where 0 is midnight)
+                    getHours();
+
+                    // Get the minutes (0-59)
+                    getMinutes();
+
+                    // Get seconds (0-59)
+                    getSeconds();
+
+                    // Get milliseconds (0-999)
+                    getMilliseconds();
+
+                    // Get the timestamp (milliseconds since Epoch time)
+                    getTime();
+                </code>
+            </pre>
+            The syntax for the above for, let's say, a date variable called myDate would be
+            <pre>
+                <code>
+                    myDate.getFullMonth();
+                </code>
+            </pre>
+        </li>
+    </ul>
+    <p>Try writing the code that checks if today is October 3rd</p>
+    <p id="practice">Is today October 3rd? </p>
+    <button onclick = "check()">Let's Check!</button>
+    <p>Solution:</p>
+    <pre>
+        <code>
+            &lt;p id="practice"&gt;Is today October 3rd?&lt;p&gt;
+            &lt;button onclick = "check()"&gt;Let's Check!&lt;button&gt;
+        </code>
+        <code>
+            function check() {
+                let answer = document.getElementById("practice");
+            
+                // Get today's date
+                const today = new Date();
+            
+                // Compare today with October 3rd
+                if (today.getDate() === 3 && today.getMonth() === 9) {
+                    answer.innerHTML += "It's October 3rd";
+                } else {
+                    answer.innerHTML += "It's not October 3rd";
+                }
+            }
+        </code>
+    </pre>
+    <p>If you have more time, you can try checking if today is your birthday, creating your own date variable and getting its timestamp (and vice versa) and more! Have fun!</p>
+</body>
+</html>

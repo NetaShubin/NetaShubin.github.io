@@ -1,0 +1,16 @@
+body {
+    background: linear-gradient(#c1daf6, #e8d0f9);
+    padding: 20px;
+}
+
+p, li {
+    font-size: larger;
+}
+
+button {
+    background-color: white;
+    font-size: large;
+    border: double 2px black;
+    padding: 5px;
+    margin-left: 10px;
+}
