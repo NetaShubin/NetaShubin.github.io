@@ -3,12 +3,12 @@
 
 body {
   color: black;
-  background: beige;
+  background: rgb(255, 251, 233);
   overflow-x: hidden;
 }
 
 nav {
-    background-color: beige;
+    background-color: rgb(255, 251, 233);
 }
 
 .navbar {
@@ -24,6 +24,10 @@ nav {
 
 .nav-item:hover, .active  {
     border-bottom: black solid 1px;
+}
+
+footer a {
+    padding-left: 20px;
 }
 
 label .menu {
