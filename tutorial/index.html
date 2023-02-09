@@ -48,6 +48,9 @@
             </pre>
         </li>
     </ol>
+    <br>
+    <hr>
+    <br>
     <!--https://www.digitalocean.com/community/tutorials/understanding-date-and-time-in-javascript-->
     <h3>Date and Time</h3>
     <ol>
@@ -84,6 +87,9 @@
     <p>It should work something like this:</p>
     <p id = "date"></p>
     <button onclick="getDate()">Get Date</button>
+    <br>
+    <br>
+    <hr>
     <h3>What else can we do?</h3>
     <ul>
         <li>You can get the timestamp in javascript with
@@ -107,8 +113,7 @@
                     new Date(year, month, day, hours, minutes, seconds, milliseconds);
                 </code>
             </pre>
-        </li>
-        <li>You can create your own date variable to, for example, store a birthday
+            You can create your own date variable to, for example, store a birthday
             <pre>
                 <code>
                     // Initialize a new birthday instance
@@ -161,10 +166,12 @@
     <p>Solution:</p>
     <pre>
         <code>
+            &lt;!-- HTML --&gt;
             &lt;p id="practice"&gt;Is today October 3rd?&lt;p&gt;
             &lt;button onclick = "check()"&gt;Let's Check!&lt;button&gt;
         </code>
         <code>
+            // Javascript
             function check() {
                 let answer = document.getElementById("practice");
             
@@ -173,9 +180,9 @@
             
                 // Compare today with October 3rd
                 if (today.getDate() === 3 && today.getMonth() === 9) {
-                    answer.innerHTML += "It's October 3rd";
+                    answer.innerHTML = "Is today October 3rd? It's October 3rd";
                 } else {
-                    answer.innerHTML += "It's not October 3rd";
+                    answer.innerHTML = "Is today October 3rd? It's not October 3rd";
                 }
             }
         </code>

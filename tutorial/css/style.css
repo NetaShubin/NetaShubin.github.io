@@ -14,3 +14,8 @@ button {
     padding: 5px;
     margin-left: 10px;
 }
+
+pre {
+    border: 2px black dashed;
+    width: 1000px;
+}

@@ -13,8 +13,8 @@ function check() {
 
     // Compare today with October 3rd
     if (today.getDate() === 3 && today.getMonth() === 9) {
-        answer.innerHTML += "It's October 3rd";
+        answer.innerHTML = "Is today October 3rd? It's October 3rd";
     } else {
-        answer.innerHTML += "It's not October 3rd";
+        answer.innerHTML = "Is today October 3rd? It's not October 3rd";
     }
 }
