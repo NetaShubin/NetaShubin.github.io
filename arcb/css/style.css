@@ -1,0 +1,32 @@
+body {
+    font-family: menco, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: black;
+    background-image: url("../images/background.jpg");
+    background-repeat: repeat;
+    background-color: gray;
+}
+
+.container {
+    background-color: white;
+}
+
+h1 {
+    color: red;
+    font-family: monarcha, serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+span {
+    color: orange;
+}
+
+a span {
+    text-decoration: underline;
+}
+
+table {
+    text-align: center;
+}

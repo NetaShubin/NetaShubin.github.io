@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academy of Russian Classical Ballet</title>
+    <link rel="stylesheet" href="https://use.typekit.net/xkb7skr.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" style="background-color: #58575a">
+            <div class="col-4" style="padding: 2%;">
+                <img src="images/logo.png" alt="logo" style="height:100px">
+            </div>
+            <div class="col-8" style="margin-bottom: auto; margin-top: auto;">
+                <h1 style="color:white">Academy of Russian Classical Ballet</h1>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-secondary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavBar"><span class="navbar-toggler-icon"></span></button>
+                <div id="collapsibleNavBar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Schedules</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="classSched.html">Class Schedule</a>
+                                <a class="dropdown-item" href="calendar.html">Calendar</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Policies</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="policies.html">Policies and Rules</a>
+                                <a class="dropdown-item" href="dressCode.html">Dress Code</a>
+                                <a class="dropdown-item" href="performanceRules.html">Performance Rules</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link">Performances</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br><br>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-11 container alert alert-danger" style="text-align: center;">
+                <h1>Coming up- End of Year performance!</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8" style="margin-bottom: auto; margin-top: auto;">
+                <p style="text-align: center;">The Academy of Russian Classical Ballet, founded in 2009 by the Artistic Director Yanina Mikhaylyuk, is a pre-professional ballet school here in the Seattle-Area. ARCB is committed to growing young ballet students in the Vaganova Method
+                    to rising artists, providing them high-quality education in classical ballet.</p>
+            </div>
+            <div class="col-4">
+                <img src="images/Fall-semester-2020-2.png" alt="Intro Image" style="width:100%">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1>Registration:</h1>
+                <ul>
+                    <li>You can complete your registration at the academy or send your registration form by email.</li>
+                    <li>Annual registration fee is $30 for one student, $45 for two students, and $55 for three students per family.</li>
+                    <li>A first semester or September tuition payment is due at the time of registration.</li>
+                    <li>Checks should be made payable to ‘ARCB’. Tuition is based on the total number of hours of instruction taken per week.</li>
+                    <li>Registration will be accepted on a first-come-first-served basis as availabilities are limited.</li>
+                    <li>Waitlists are created in the order the registrations are received in. If registration is not completed, the open spot transfers to the next person on the waitlist.</li>
+                    <li>New students of age 6 and older should take a placement class before the enrollment.</li>
+                    <li>A trial/ placement class fee is $15 for any level.</li>
+                    <li>All Academy students must register at the beginning of each academic year before attending classes.</li>
+                    <li>Returning students will not pay an additional registration fee until next September.</li>
+                    <li>Dancers enrolled in the First Semester will be automatically re-enrolled in the same class for the Second Semester.</li>
+                    <li>Registration for Levels A and A* (Ages 3-5) is based on age. These classes focus on beginner ballet vocabulary with extra emphasis on posture, coordination, and memorization.</li>
+                    <li>Registration for Levels B and above (Ages 6 and older) is based on age, experience, performance, and ability. A trial class and evaluation by the Artistic Director is required.</li>
+                    <li><a href="files/Registration-Form.pdf" target="_blank"><span>Registration Form</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1>Tuition:</h1>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Hours per week</th>
+                            <th>Semester Payment<br>(In full for 5 months)</th>
+                            <th>Installment Payment<br>(Monthly- 5 equal installments)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="form-group">
+                                    <select id="hours" class="form-control form-control-sm">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="4.5">4.5</option>
+                                        <option value="5">5</option>
+                                        <option value="5.5">5.5</option>
+                                        <option value="6">6</option>
+                                        <option value="6.5">6.5</option>
+                                        <option value="7">7</option>
+                                        <option value="7.5">7.5</option>
+                                        <option value="8">8</option>
+                                        <option value="8.5">8.5</option>
+                                        <option value="9">9</option>
+                                        <option value="9.5">9.5</option>
+                                        <option value="10">10</option>
+                                        <option value="10.5">10.5</option>
+                                        <option value="11">11</option>
+                                        <option value="11.5">11.5</option>
+                                        <option value="12">12</option>
+                                        <option value="12.5">12.5</option>
+                                        <option value="13">13</option>
+                                        <option value="13.5">13.5</option>
+                                        <option value="14">14</option>
+                                    </select>
+                                </div>
+                                <button class="btn btn-secondary" id="submitHours" onclick="getPrice()">Submit</button>
+                            </td>
+                            <td id="payment"></td>
+                            <td id="installment"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col">
+                <ul>
+                    <li>First semester: September – January (5 months), tuition is due at the time of the registration, not late than September 2, 2021.</li>
+                    <li>Second semester: February – June (5 months), tuition is due on January 15th, 2021.</li>
+                    <li>Installment payments are due on the 20th of the previous month. May and June tuition will be combined and is due on April 20, 2020.</li>
+                    <li>A private class costs $85 for 60 min., $45 for 30 min.</li>
+                    <li>Add $25 to any late tuition payments.</li>
+                    <li>$35 handling fee will be charged for all returned checks. No exceptions.</li>
+                    <li>Payments remain the same each month regardless of attendance, school closures, holidays and bad weather or electricity outages.</li>
+                    <li>We currently accept personal checks or cash, no credit or debit cards.</li>
+                    <li>Please make checks payable to the Academy of Russian Classical Ballet.</li>
+                    <li>The tuition fee is non-refundable and non-transferable from one month/ semester to another, and from one student to another.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <br>
+        <div class="jumbotron" style="text-align: center;">
+            <h6>Academy of Russian Classical Ballet</h6>
+            <a href="https://www.youtube.com/channel/UCw_hMyMgG0eB3VvsV8a4Fnw/videos?view_as=subscriber " target="_blank "><img src="images/youtube.png " alt="youtube " style="height: 30px "></a>
+            <a href="https://www.facebook.com/academy.of.russian.classical.ballet " target="_blank "><img src="images/facebook.png " alt="facebook " style="height: 30px "></a>
+            <a href="https://www.instagram.com/russianballetwa/ " target="_blank "><img src="images/instagram.png " alt="instagram " style="height: 30px "></a>
+        </div>
+        <br>
+    </div>
+    <br>
+</body>
+
+</html>
