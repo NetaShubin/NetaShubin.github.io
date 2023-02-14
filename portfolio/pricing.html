@@ -15,14 +15,20 @@
     
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
+
+    <style>
+        table {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-light">
         <a class="navbar-brand" href="index.html"><img class = "logo" src="images/logo.png" alt="Portfolio"></a>        
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="process.html">Process</a>
@@ -30,7 +36,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="gallery.html">Gallery</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="pricing.html">Pricing</a>
                 </li>
                 <li class="nav-item">
@@ -68,37 +74,52 @@
         <li> <a href="contact.html">Contact Us</a> </li>
         </ul>
     </label>
-    <div class="row justify-content-md-center" style="margin-bottom: 20px;">
+    <div class="row justify-content-md-center">
         <div class="col-md-8" style="text-align: center;">
-            <h1>Welcome!</h1>
+            <h1>Plans</h1>
+            <p>View various options below:</p>
         </div>
     </div>
     <div class="row justify-content-md-center">
-        <div class="col-md-6" style="text-align: center;">
-            <h3>Neta Shubin</h3>
-            <p>A graduating senior in high school, she has <b>designed</b> and created many websites throughout her programming career, creating <b>modern</b> and <b>themed</b> sites which met each company's desires and more. These websites were <b>responsive</b>, <b>interactive</b>, and <b>user-friendly</b>.</p> 
-            <p>Neta can't wait to help you create the website of your dreams next!</p>
-        </div>
-        <div class="col-md-2" style="text-align: center; margin-top: auto; margin-bottom: auto;">
-            <button class="btn btn-danger"><a href = "gallery.html" target="_self">See More</a></button>
+        <div class="col-md-8">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th><b><h5>Package</h5></b></th>
+                        <th><b><h5>Price</h5></b></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="width: 50%">
+                            <div class="form-group">
+                                <select id="package" class="form-control form-control-sm">
+                                    <option value="1">Redesign website</option>
+                                    <option value="2">Redesign website and logo</option>
+                                    <option value="3">Create website from scratch</option>
+                                    <option value="4">Create website from scratch and set up Google presence</option>
+                                </select>
+                            </div>
+                            <button class="btn btn-danger" id="submitHours" onclick="getPrice()">Submit</button>
+                        </td>
+                        <td id="price" style="width: 50%"></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
-    <div class="row justify-content-md-center" style="margin-top: 30px; margin-bottom: 50px">
-        <!--Box shadow: https://www.w3schools.com/cssref/css3_pr_box-shadow.php-->
-        <div class="col-md-4" style="text-align: center;">
-            <img src="images/davinci.png" alt="DaVinci" style="width: 90%; box-shadow: -10px 15px orange; border: 1px black solid; margin-bottom: 30px;">
-        </div>
-        <div class="col-md-4" style="text-align: center;">
-            <img src="images/Interior-Visions-LLC.png" alt="Interior Vision LLC" style="width: 90%; box-shadow: -10px 15px orange; border: 1px black solid;">
+    <div class="row justify-content-md-center">
+        <div class="col-md-8" style="text-align: center;">
+            <p>Note: These package deals are alterable. You can mix and match as needed and the price will be adjusted accordingly.</p>
         </div>
     </div>
     <footer class="page-footer">
-            <p>NETA SHUBIN</p>
-            <a href="mailto:shubinneta@gmail.com"><img src="images/email.png" alt="Email" style="height:20px;"></a>
-            <a href="tel:425-499-0423"><img src="images/phone.png" alt="Phone" style="height:20px;"></a>
-            <a href="https://www.facebook.com/neta.shubin.9/" target="_blank"><img src="images/facebook.png" alt="Facebook" style="height:20px;"></a>
-            <a href="https://www.instagram.com/shubinneta/" target="_blank"><img src="images/instagram.png" alt="facebook" style="height:20px;"></a>
-            <br>
-    </footer>
+        <p>NETA SHUBIN</p>
+        <a href="mailto:shubinneta@gmail.com"><img src="images/email.png" alt="Email" style="height:20px;"></a>
+        <a href="tel:425-499-0423"><img src="images/phone.png" alt="Phone" style="height:20px;"></a>
+        <a href="https://www.facebook.com/neta.shubin.9/" target="_blank"><img src="images/facebook.png" alt="Facebook" style="height:20px;"></a>
+        <a href="https://www.instagram.com/shubinneta/" target="_blank"><img src="images/instagram.png" alt="facebook" style="height:20px;"></a>
+        <br>
+</footer>
 </body>
 </html>

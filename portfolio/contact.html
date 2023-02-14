@@ -15,14 +15,20 @@
     
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
+
+    <style>
+        input {
+            width: 300px;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-light">
         <a class="navbar-brand" href="index.html"><img class = "logo" src="images/logo.png" alt="Portfolio"></a>        
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="process.html">Process</a>
@@ -36,7 +42,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="about.html">About</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="contact.html">Contact Us</a>
                 </li>
             </ul>
@@ -68,37 +74,41 @@
         <li> <a href="contact.html">Contact Us</a> </li>
         </ul>
     </label>
-    <div class="row justify-content-md-center" style="margin-bottom: 20px;">
-        <div class="col-md-8" style="text-align: center;">
-            <h1>Welcome!</h1>
-        </div>
-    </div>
     <div class="row justify-content-md-center">
-        <div class="col-md-6" style="text-align: center;">
-            <h3>Neta Shubin</h3>
-            <p>A graduating senior in high school, she has <b>designed</b> and created many websites throughout her programming career, creating <b>modern</b> and <b>themed</b> sites which met each company's desires and more. These websites were <b>responsive</b>, <b>interactive</b>, and <b>user-friendly</b>.</p> 
-            <p>Neta can't wait to help you create the website of your dreams next!</p>
+        <div class="col-md-4">
+            <h3>Connect With Us</h3>
+            <p>Thank you for your interest in working with Neta Shubin. Feel free to email or call us and we will get back to you in 3-5 business days.</p>
+            <p>Email us at <a class="link" href="mailto: shubinneta@gmail.com">shubinneta@gmail.com</a></p>
+            <p>Call us at <a class="link" href="tel: 425-499-0423">425-499-0423</a></p>
+            <p>Hours:</p>
+            <ul>
+                <li>Mon-Fri: 9 am - 6 pm</li>
+                <li>Sat: 12 am - 5 pm</li>
+                <li>Sun: Closed</li>
+            </ul>
         </div>
-        <div class="col-md-2" style="text-align: center; margin-top: auto; margin-bottom: auto;">
-            <button class="btn btn-danger"><a href = "gallery.html" target="_self">See More</a></button>
-        </div>
-    </div>
-    <div class="row justify-content-md-center" style="margin-top: 30px; margin-bottom: 50px">
-        <!--Box shadow: https://www.w3schools.com/cssref/css3_pr_box-shadow.php-->
-        <div class="col-md-4" style="text-align: center;">
-            <img src="images/davinci.png" alt="DaVinci" style="width: 90%; box-shadow: -10px 15px orange; border: 1px black solid; margin-bottom: 30px;">
-        </div>
-        <div class="col-md-4" style="text-align: center;">
-            <img src="images/Interior-Visions-LLC.png" alt="Interior Vision LLC" style="width: 90%; box-shadow: -10px 15px orange; border: 1px black solid;">
+        <div class="col-md-4">
+            <h3>Email Form</h3>
+            <form>
+                <label for="fname">Name</label><br>
+                <input style="height: 30px" type="text" id="name" name="name" placeholder="First and Last Name"><br>
+                <label for="fname">Email</label><br>
+                <input style="height: 30px" type="text" id="email" name="email" placeholder="Your Email"><br>
+                <label for="fname">Description of Project</label><br>
+                <input style="height: 100px" type="text" id="description" name="description" placeholder="Description">
+                <br>
+                <br>
+                <button type="button" class="btn btn-danger"><a href = "#" target="_self" onclick="alert('Thanks for submitting! We will respond in 3-5 business days.')">Submit</a></button>
+            </form>
         </div>
     </div>
     <footer class="page-footer">
-            <p>NETA SHUBIN</p>
-            <a href="mailto:shubinneta@gmail.com"><img src="images/email.png" alt="Email" style="height:20px;"></a>
-            <a href="tel:425-499-0423"><img src="images/phone.png" alt="Phone" style="height:20px;"></a>
-            <a href="https://www.facebook.com/neta.shubin.9/" target="_blank"><img src="images/facebook.png" alt="Facebook" style="height:20px;"></a>
-            <a href="https://www.instagram.com/shubinneta/" target="_blank"><img src="images/instagram.png" alt="facebook" style="height:20px;"></a>
-            <br>
-    </footer>
+        <p>NETA SHUBIN</p>
+        <a href="mailto:shubinneta@gmail.com"><img src="images/email.png" alt="Email" style="height:20px;"></a>
+        <a href="tel:425-499-0423"><img src="images/phone.png" alt="Phone" style="height:20px;"></a>
+        <a href="https://www.facebook.com/neta.shubin.9/" target="_blank"><img src="images/facebook.png" alt="Facebook" style="height:20px;"></a>
+        <a href="https://www.instagram.com/shubinneta/" target="_blank"><img src="images/instagram.png" alt="facebook" style="height:20px;"></a>
+        <br>
+</footer>
 </body>
 </html>

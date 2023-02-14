@@ -2,9 +2,42 @@
 { box-sizing: border-box; }
 
 body {
+  padding: 10px;
   color: black;
   background: rgb(255, 251, 233);
   overflow-x: hidden;
+  /*fade in effect- https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/*/
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+h1, h3 {
+    color: darkorange;
+}
+
+.logo {
+    height: 100px;
+    margin-left: 50%;
+}
+
+.logo:hover {
+    animation-name: idea;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
+}
+
+@keyframes idea {
+    0% {
+        filter: brightness(100%);
+    }
+    100% {
+        /*https://www.tutorialspoint.com/setting-the-image-brightness-using-css3#:~:text=To%20set%20image%20brightness%20in,would%20make%20the%20image%20brighter.*/
+        filter: brightness(110%);
+    }
 }
 
 nav {
@@ -14,20 +47,57 @@ nav {
 .navbar {
     border: 0;
     font-size: large;
-    margin-bottom: 40px;
 }
 
 .nav-item {
-    padding: 0 10px;
+    padding: 0 5px;
+    margin-left: 5px;
+    margin-right: 5px;
     font-size: medium;
 }
 
-.nav-item:hover, .active  {
+.nav-item:hover, .navbar-nav .active  {
     border-bottom: black solid 1px;
 }
 
+.navbar-right img {
+    height: 25px;
+}
+
+.btn {
+    font-size: medium;
+    padding: 10px;
+}
+
+.btn a {
+    color: white;
+}
+
+.btn a:hover {
+    text-decoration: none;
+}
+
+b {
+    color: darkorange;
+    /*https://www.geeksforgeeks.org/css-font-border/*/
+    -webkit-text-stroke-width: 0.25px;
+    -webkit-text-stroke-color: black;
+}
+
+.link {
+    color: darkorange;
+}
+
+footer {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
 footer a {
-    padding-left: 20px;
+    margin-top: -10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 label .menu {
@@ -122,27 +192,43 @@ label a {
   display: block;
   color: black;
   text-decoration: none;
-  
 }
 
-h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width: 80%;
-  text-align: center;
+/*Fade in effect- https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/*/
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }
 
-@media (min-width:780px){
-    label {
-        visibility: hidden;
+/*Responsive*/
+@media (max-width: 860px){
+    .navbar-right img {
+        height:15px;
+    }
+
+    .nav-item {
+        font-size: small;
     }
 }
 
-/*from the smallest screen to width of 620px...*/
-@media only screen and (max-width:780px){
+@media (min-width:1020px){
+    label {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+@media (max-width: 900px){
+    .logo {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width:1020px){
     .collapse {
         visibility: hidden;
     }
