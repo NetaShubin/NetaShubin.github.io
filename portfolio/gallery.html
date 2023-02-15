@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/simplex/bootstrap.min.css" integrity="sha384-FYrl2Nk72fpV6+l3Bymt1zZhnQFK75ipDqPXK0sOR0f/zeOSZ45/tKlsKucQyjSp" crossorigin="anonymous">
     
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+    
 
     <style>
         .row img {
@@ -27,6 +27,18 @@
 
         body {
             text-align: center;
+        }
+
+        .reveal {
+            position: relative;
+            transform: translateX(-150px);
+            opacity: 0;
+            transition: 2s all ease;
+        }
+
+        .activate{
+            transform: translateY(0);
+            opacity: 1;
         }
     </style>
 </head>
@@ -89,7 +101,7 @@
             <br>
         </div>
     </div>
-    <div class="row justify-content-md-center sites">
+    <div class="row justify-content-md-center sites reveal">
         <div class="col-md-4">
             <a href="https://NetaShubin.github.io/facelift/" target="_blank"><img src="images/cupcakes.png" alt="Cupcakes" style="max-width: 300px;"></a>
 
@@ -109,14 +121,14 @@
         </div>
     </div>
     <br><hr><br>
-    <div class="row justify-content-md-center">
+    <div class="row justify-content-md-center art">
         <div class="col-md-8">
             <h3>Artwork</h3>
             <p>To see some more samples of my work, explore some pieces of art I made throughout the years.</p>
             <br>
         </div>
     </div>
-    <div class="row justify-content-md-center">
+    <div class="row justify-content-md-center reveal">
         <div class="col-md-4">
             <img src="images/boat.png" alt="Boat" style="max-width: 300px;">
 
@@ -135,6 +147,7 @@
             <img src="images/darkLight.png" alt="Battle of Dark and Light" style="max-width: 300px;">
         </div>
     </div>
+    <script src="js/script.js"></script>
     <footer class="page-footer">
         <p>NETA SHUBIN</p>
         <a href="mailto:shubinneta@gmail.com"><img src="images/email.png" alt="Email" style="height:20px;"></a>
