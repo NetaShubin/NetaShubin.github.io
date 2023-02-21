@@ -12,6 +12,19 @@ body {
   animation-fill-mode: forwards;
 }
 
+/*Daniel's demo*/
+.reveal {
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.activate{
+    transform: translateY(0);
+    opacity: 1;
+}
+
 h1, h3, h4 {
     color: darkorange;
 }
