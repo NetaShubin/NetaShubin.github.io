@@ -14,6 +14,28 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/simplex/bootstrap.min.css" integrity="sha384-FYrl2Nk72fpV6+l3Bymt1zZhnQFK75ipDqPXK0sOR0f/zeOSZ45/tKlsKucQyjSp" crossorigin="anonymous">
     
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        @media (min-width: 765px) {
+            .borderR {
+                border-right: 1px solid black;
+            }
+        }
+
+        @media only screen and (max-width:765px) {
+            body {
+                text-align: center;
+            }
+
+            ul {
+                text-align: left;
+            }
+
+            .borderR {
+                border-right: none;
+            }
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-light">
@@ -67,8 +89,8 @@
         <li> <a href="contact.html">Contact Us</a> </li>
         </ul>
     </label>
-    <div class="row justify-content-md-center">
-        <h1>About</h1>
+    <div class="row justify-content-center">
+        <h1 style="text-align: center;">About</h1>
     </div>
     <br>
     <div class="row justify-content-md-center reveal">
@@ -77,12 +99,12 @@
             <p>She has worked pro bono to create websites for local businesses, increasing their online presence and boosting their clientele. She has also organized and hosted an annual global hackathon in the summers of 2021 and 2022, encouraging high school students all over the world to continue exploring this vast field in computer science.</p>
         </div>
         <div class="col-md-3">
-            <img src="images/Neta.PNG" alt="Neta Shubin" style="width: 70%; margin-bottom: 20px;">
+            <img src="images/Neta.JPG" alt="Neta Shubin" style="width: 70%; margin-bottom: 20px;">
         </div>
     </div>
     <br><br>
     <div class="row justify-content-md-center reveal">
-        <div class="col-md-4" style="border-right: 1px solid black">
+        <div class="col-md-4 borderR">
             <h3 style="text-align: center;">Achievements</h3>
             <ul>
                 <li>AP Scholar with Distinction</li>

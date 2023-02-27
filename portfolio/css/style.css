@@ -12,7 +12,7 @@ body {
   animation-fill-mode: forwards;
 }
 
-/*Daniel's demo*/
+/*Daniel's slide in demo*/
 .reveal {
     position: relative;
     transform: translateX(-150px);
@@ -43,6 +43,7 @@ h1, h3, h4 {
     animation-fill-mode: forwards;
 }
 
+/*Light up light bulb when hovering over image*/
 @keyframes idea {
     0% {
         filter: brightness(100%);
@@ -235,7 +236,7 @@ label a {
     }
 }
 
-@media (max-width: 900px){
+@media only screen and (max-width: 900px){
     .logo {
         margin-left: 0;
     }
