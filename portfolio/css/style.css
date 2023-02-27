@@ -114,6 +114,7 @@ footer a {
     padding-right: 10px;
 }
 
+/*Collapsed hamburger- https://alvarotrigo.com/blog/hamburger-menu-css/*/
 label .menu {
   position: absolute;
   right: -100px;
