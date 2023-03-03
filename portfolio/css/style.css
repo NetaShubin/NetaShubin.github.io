@@ -54,6 +54,7 @@ h1, h3, h4 {
     }
 }
 
+/*nav bar*/
 nav {
     background-color: rgb(255, 251, 233);
 }
@@ -70,7 +71,7 @@ nav {
     font-size: medium;
 }
 
-.nav-item:hover, .navbar-nav .active  {
+.mx-auto .nav-item:hover, .navbar-nav .active  {
     border-bottom: black solid 1px;
 }
 
@@ -102,16 +103,48 @@ b {
     color: darkorange;
 }
 
-footer {
-    margin-top: 20px;
-    padding-bottom: 20px;
+/*footer with https://csshint.com/html-css-footer-design/*/
+.page-footer {
+    margin-top: 50px;
+    display: inline-block;
+    font-size: medium;
+    width: 100%;
     text-align: center;
+    text-decoration: none;
+}
+  
+.page-footer .footer-links a {
+    display: inline-block;
+    transition: ease .25s;
+    color: darkorange;
+}
+  
+.page-footer .footer-links a:before {
+    content: "·";
+    color: black;
+    display: inline-block;
+    padding-right: 5px;
 }
 
-footer a {
+.page-footer .footer-links a:first-child:before {
+    content: none;
+}
+  
+.socials a{
+    display: inline-block;
     margin-top: -10px;
     padding-left: 10px;
     padding-right: 10px;
+    transition:all .25s;
+}
+  
+.socials a:hover {
+    transform:scale(1.1); 
+    -webkit-transform:scale(1.1);
+}
+  
+.page-footer p.footer-links a:hover {
+    text-decoration:underline;
 }
 
 /*Collapsed hamburger- https://alvarotrigo.com/blog/hamburger-menu-css/*/
