@@ -1,3 +1,4 @@
+// Function for interactive pricing table
 function getPrice() {
     let deal = document.getElementById("package");
     let chosen = deal.value;
@@ -16,6 +17,7 @@ function getPrice() {
     }
 }
 
+// Dani's slide-in demo
 function reveal() {
     var reveals = document.getElementsByClassName("reveal");
     for (var i = 0; i < reveals.length; i++) {
@@ -31,6 +33,7 @@ window.addEventListener("scroll", reveal);
 
 // To check the scroll position on page load
 reveal();
+
 
 // Back to top button- https://mdbootstrap.com/snippets/standard/mdbootstrap/2964350#js-tab-view
 //Get the button
