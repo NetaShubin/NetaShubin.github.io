@@ -57,7 +57,6 @@ h1, h3, h4 {
 /*back to top button- https://mdbootstrap.com/snippets/standard/mdbootstrap/2964350#css-tab-view*/
 #btn-back-to-top {
     position: fixed;
-    float: right;
     z-index: 1;
     bottom: 20px;
     right: 20px;
@@ -169,7 +168,7 @@ label .menu {
   width: 200px;
   height: 200px;
   background: darkorange;
-  border-radius: 50% 50% 50% 50%;
+  border-radius: 0% 50%;
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
