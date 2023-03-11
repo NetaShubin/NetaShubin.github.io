@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neta's Portfolio</title>
+    
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/simplex/bootstrap.min.css" integrity="sha384-FYrl2Nk72fpV6+l3Bymt1zZhnQFK75ipDqPXK0sOR0f/zeOSZ45/tKlsKucQyjSp" crossorigin="anonymous">
+    
+    <!--Material Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        .jumbotron {
+            background-color: white;
+            height: 100%;
+            padding: 15px;
+        }
+
+        .carousel {
+            border: 5px double darkorange;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .carousel-item {
+            background-color: white;
+            height: 300px;
+        }
+
+        @media (min-width:860px) and (max-width:1040px){
+            .carousel-item{
+                height: 350px;
+            }
+        }
+
+        @media only screen and (max-width:860px){
+            .carousel-item{
+                height: 400px;
+            }
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            height: 100px;
+            width: 100px;
+            background-size: 100%, 100%;
+            border-radius: 50%;
+            background-image: none;
+        }
+
+        .carousel-control-next-icon:after {
+            content: '>';
+            font-size: 50px;
+            color: darkorange;
+        }
+
+        .carousel-control-prev-icon:after {
+            content: '<';
+            font-size: 50px;
+            color: darkorange;
+        }
+
+        .jumbotron .row {
+            padding: 60px 10px 10px 30px;
+        }
+
+        .carousel-indicators li {
+            background-color: darkorange;
+        }
+
+        .carousel-indicators li:hover {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+     <!--back to top button- https://mdbootstrap.com/snippets/standard/mdbootstrap/2964350#css-tab-view-->
+     <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+        <span class="material-symbols-outlined">arrow_upward</span>
+    </button>
+    <nav class="navbar navbar-expand-md navbar-light">
+        <a class="navbar-brand" href="index.html"><img class = "logo" src="images/logo.png" alt="Portfolio"></a>        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="process.html">Process</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="artwork.html">Artwork</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right flex-row socials">
+                <li class="nav-item">
+                    <a href="mailto:shubinneta@gmail.com" class="nav-link"><img src="images/email.png" alt="Email"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="tel:425-499-0423" class="nav-link"><img src="images/phone.png" alt="Phone"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.facebook.com/neta.shubin.9/" target="_blank" class="nav-link"><img src="images/facebook.png" alt="Facebook"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.instagram.com/shubinneta/" target="_blank" class="nav-link"><img src="images/instagram.png" alt="facebook"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <label class="myCollapse">
+        <input type="checkbox">
+        <span class="menu"> <span class="hamburger"></span> </span>
+        <ul>
+        <li> <a href="index.html">Home</a> </li>
+        <li> <a href="process.html">Process</a> </li>
+        <li> <a href="gallery.html">Gallery</a> </li>
+        <li> <a href="artwork.html">Artwork</a> </li>
+        <li> <a href="about.html">About</a> </li>
+        <li> <a href="contact.html">Contact Us</a> </li>
+        </ul>
+    </label>
+    <div class="row justify-content-center">
+        <div class="col-sm-8" style="text-align: center;">
+            <h1>4 Simple Steps</h1>
+            <p>Get your very own website in just four simple steps!</p>
+        </div>
+    </div>
+    <br>
+    <div class="row justify-content-center reveal">
+        <div class="col-sm-8" style="text-align: center;">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleControls" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="jumbotron">
+                            <div class="row">
+                                <div class="col-md-4" style="text-align: center; margin-top: auto; margin-bottom: auto;">
+                                    <span class="material-symbols-outlined" style="font-size: 90px; color: darkorange">
+                                        mail
+                                    </span>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3>1. Email Me</h3>
+                                    <p>Include your current website (if available) and what changes you may desire. It's alright if you aren't sure of what changes you want, that's what I am here for.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="jumbotron">
+                            <div class="row">
+                                <div class="col-md-4" style="text-align: center; margin-top: auto; margin-bottom: auto;">
+                                    <span class="material-symbols-outlined" style="font-size: 90px; color: darkorange">
+                                        event
+                                    </span>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3>2. Set a Meeting</h3>
+                                    <p>During this time, we will show you a few design ideas. You will let us know which ones you like the most, what changes you were thinking to make, and any questions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="jumbotron">
+                            <div class="row">
+                                <div class="col-md-4" style="text-align: center; margin-top: auto; margin-bottom: auto;">
+                                    <span class="material-symbols-outlined" style="font-size: 90px; color: darkorange">
+                                        checklist
+                                    </span>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3>3. Finalize</h3>
+                                    <p>We will let you know via an email once we have made your vision a reality. Throughout the process, we will set another meeting to see what changes you would like to make.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="jumbotron">
+                            <div class="row">
+                                <div class="col-md-4" style="text-align: center; margin-top: auto; margin-bottom: auto;">
+                                    <span class="material-symbols-outlined" style="font-size: 90px; color: darkorange">
+                                        done_all
+                                    </span>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3>4. New Website!</h3>
+                                    <p>We will notify you via email once the website is finalized. Once we recieve your approval, we will publish your website and excitedly watch as your business flourishes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <footer class="page-footer">
+        <hr>
+        <p>NETA SHUBIN &copy;2023</p>
+        <div class="footer-left">
+            <p class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="process.html">Process</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="artwork.html">Artwork</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact Us</a>
+            </p>
+        </div>
+        <div class="socials">
+            <a href="mailto:shubinneta@gmail.com"><img src="images/email.png" alt="Email" style="height:20px;"></a>
+            <a href="tel:425-499-0423"><img src="images/phone.png" alt="Phone" style="height:20px;"></a>
+            <a href="https://www.facebook.com/neta.shubin.9/" target="_blank"><img src="images/facebook.png" alt="Facebook" style="height:20px;"></a>
+            <a href="https://www.instagram.com/shubinneta/" target="_blank"><img src="images/instagram.png" alt="facebook" style="height:20px;"></a>
+        </div>
+        <br>
+    </footer>
+</body>
+</html>

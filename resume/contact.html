@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neta's Portfolio</title>
+    
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/simplex/bootstrap.min.css" integrity="sha384-FYrl2Nk72fpV6+l3Bymt1zZhnQFK75ipDqPXK0sOR0f/zeOSZ45/tKlsKucQyjSp" crossorigin="anonymous">
+    
+    <!--Material Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        input {
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+     <!--back to top button- https://mdbootstrap.com/snippets/standard/mdbootstrap/2964350#css-tab-view-->
+     <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+        <span class="material-symbols-outlined">arrow_upward</span>
+    </button>
+    <nav class="navbar navbar-expand-md navbar-light">
+        <a class="navbar-brand" href="index.html"><img class = "logo" src="images/logo.png" alt="Portfolio"></a>        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="process.html">Process</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="artwork.html">Artwork</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right flex-row socials">
+                <li class="nav-item">
+                    <a href="mailto:shubinneta@gmail.com" class="nav-link"><img src="images/email.png" alt="Email"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="tel:425-499-0423" class="nav-link"><img src="images/phone.png" alt="Phone"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.facebook.com/neta.shubin.9/" target="_blank" class="nav-link"><img src="images/facebook.png" alt="Facebook"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.instagram.com/shubinneta/" target="_blank" class="nav-link"><img src="images/instagram.png" alt="facebook"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <label class="myCollapse">
+        <input type="checkbox">
+        <span class="menu"> <span class="hamburger"></span> </span>
+        <ul>
+        <li> <a href="index.html">Home</a> </li>
+        <li> <a href="process.html">Process</a> </li>
+        <li> <a href="gallery.html">Gallery</a> </li>
+        <li> <a href="artwork.html">Artwork</a> </li>
+        <li> <a href="about.html">About</a> </li>
+        <li> <a href="contact.html">Contact Us</a> </li>
+        </ul>
+    </label>
+    <div class="row justify-content-center">
+        <h1>Contact</h1>
+    </div>
+    <br>
+    <div class="row justify-content-md-center reveal">
+        <div class="col-md-4">
+            <h3>Connect With Us</h3>
+            <p>Thank you for your interest in working with Neta Shubin. Feel free to email or call us and we will get back to you in 3-5 business days.</p>
+            <p>Email us at <a class="link" href="mailto: shubinneta@gmail.com">shubinneta@gmail.com</a></p>
+            <p>Call us at <a class="link" href="tel: 425-499-0423">425-499-0423</a></p>
+            <p>Hours:</p>
+            <ul>
+                <li>Mon-Fri: 9 am - 6 pm</li>
+                <li>Sat: 12 am - 5 pm</li>
+                <li>Sun: Closed</li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h3>Email Form</h3>
+            <form>
+                <label for="fname">Name</label><br>
+                <input style="height: 30px" type="text" id="name" name="name" placeholder="First and Last Name"><br>
+                <label for="fname">Email</label><br>
+                <input style="height: 30px" type="text" id="email" name="email" placeholder="Your Email"><br>
+                <label for="fname">Description of Project</label><br>
+                <input style="height: 100px" type="text" id="description" name="description" placeholder="Description">
+                <br>
+                <br>
+                <button type="button" class="btn btn-danger"><a href = "#" target="_self" onclick="alert('Thanks for submitting! We will respond in 3-5 business days.')">Submit</a></button>
+            </form>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <footer class="page-footer">
+        <hr>
+        <p>NETA SHUBIN &copy;2023</p>
+        <div class="footer-left">
+            <p class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="process.html">Process</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="artwork.html">Artwork</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact Us</a>
+            </p>
+        </div>
+        <div class="socials">
+            <a href="mailto:shubinneta@gmail.com"><img src="images/email.png" alt="Email" style="height:20px;"></a>
+            <a href="tel:425-499-0423"><img src="images/phone.png" alt="Phone" style="height:20px;"></a>
+            <a href="https://www.facebook.com/neta.shubin.9/" target="_blank"><img src="images/facebook.png" alt="Facebook" style="height:20px;"></a>
+            <a href="https://www.instagram.com/shubinneta/" target="_blank"><img src="images/instagram.png" alt="facebook" style="height:20px;"></a>
+        </div>
+        <br>
+    </footer>
+</body>
+</html>
