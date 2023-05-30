@@ -34,6 +34,48 @@ h1 {
     animation: typewriter 4s steps(44) 5s 1 normal both, blinkTextCursor 500ms infinite;
 }
 
+.line3 {
+    color: black;
+    font-family: "wausau", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter 4s steps(44) 9s 1 normal both, blinkTextCursor 500ms infinite;
+}
+
+.line4 {
+    color: black;
+    font-family: "wausau", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter 4s steps(44) 13s 1 normal both, blinkTextCursor 500ms infinite;
+}
+
+
+.line4 {
+    color: black;
+    font-family: "wausau", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter 4s steps(44) 15s 1 normal both, blinkTextCursor 500ms infinite;
+}
+
+
+.line5 {
+    color: black;
+    font-family: "wausau", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter 4s steps(44) 18s 1 normal both, blinkTextCursor 500ms infinite;
+}
+
 @keyframes typewriter {
     from {
         width: 0;
