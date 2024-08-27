@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGrade</title>
+    <link rel="stylesheet" href="https://use.typekit.net/sfm7aqb.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--theme-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/journal/bootstrap.min.css" integrity="sha384-QDSPDoVOoSWz2ypaRUidLmLYl4RyoBWI44iA5agn6jHegBxZkNqgm2eHb6yZ5bYs" crossorigin="anonymous">
+    <style>
+        .jumbotron {
+            background-color: white;
+            margin: 20px;
+        }
+        
+        .accordion {
+            background-color: rgb(255, 239, 209);
+            color: orange;
+            cursor: pointer;
+            padding: 20px;
+            width: 100%;
+            border: orange;
+            border-style: solid;
+            border-width: 1px;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+            font-family: interstate-condensed, sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+        
+        .faqactive,
+        .accordion:hover {
+            background-color: rgb(255, 235, 198);
+        }
+        
+        .accordion:after {
+            content: '\002B';
+            color: black;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+        
+        .faqactive:after {
+            content: "\2212";
+        }
+        
+        .panel {
+            padding: 0 20px;
+            padding-top: 5px;
+            max-height: 0;
+            overflow: hidden;
+            background-color: white;
+            transition: max-height 0.2s ease-out;
+        }
+        
+        .panel p {
+            font-family: interstate-condensed, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            margin: 5px;
+        }
+        
+        .faq,
+        .accordion {
+            color: black;
+            text-align: left;
+        }
+        
+        a {
+            color: orange;
+        }
+        
+        #signUpButton {
+            border: double;
+            color: black;
+            border-spacing: 5px;
+            padding: 5px;
+        }
+        
+        p {
+            margin: 0px;
+        }
+        
+        .navbar-toggler-icon {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navigation">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="images/Logo2White.png" style="width: 100px;" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavBar"><span class="navbar-toggler-icon"></span></button>
+                <div id="collapsibleNavBar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="process.html" class="nav-link">How We Work</a></li>
+                        <li class="nav-item"><a href="samples.html" class="nav-link">Sample Work</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    </ul>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item"><a href="mailto:someEmail" class="nav-link" style="color: orange">Email Here</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid" style="text-align: center; ">
+        <div class="row justify-content-md-center">
+            <div class="col-md-6">
+                <p style="padding: 40px; text-align: center;">WebGrade is a free service which upgrades your website using a more user-friendly and high quality design. It was founded in the summer of 2021 by Daniel and Neta Shubin. To learn more about how we work, click <a href="process.html" target="_self">here</a>.
+                    To learn more about the founders, click <a href="about.html" target="_self">here</a>. Our goal is to make your vision a reality, from making higher quality features to giving your website a whole new look! We look forward to meeting
+                    you and learning all about your wonderful business! See you soon!</p>
+                <a id="signUpButton" href="mailto:someEmail">Sign Up Now!</a>
+            </div>
+            <div class="col-md-4">
+                <br><br>
+                <img src="images/Logo2round.png" alt="logo" style="width: 200px;">
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-md-3 jumbotron">
+                <i class="material-icons" style="font-size: 60px;">thumb_up</i>
+                <h3>Improved Design</h3>
+                <p>In WebGrade, we improve the design of your website so your clients can find what they need more easily and efficiently. This consists of making your most essential information more visible and easy to find. We do this by accentuating important
+                    phrases and creating seperate pages for main information.</p>
+            </div>
+            <div class="col-md-3 jumbotron">
+                <span class="material-icons" style="font-size: 60px;">account_circle</span>
+                <h3>User-Friendly</h3>
+                <p>We also make your website more user-friendly by adding more color and images. We also create interactive features such as tables, buttons, and more to further attract customers. Additionally, we ensure each web page is of the highest quality.
+                    These simple but important details will attract even more customers to your business!</p>
+            </div>
+            <div class="col-md-3 jumbotron">
+                <span class="material-icons" style="font-size: 60px;">done_outline</span>
+                <h3>Flexibility</h3>
+                <p>Our service is completely free and voluntary, giving us the flexibility to fit to your individual needs. Furthermore, if you don't have an initial website, we are glad to make your first website for you. Additionally, if your website uses
+                    a website making platform, we are open to using that same platform to redesign your website for you.</p>
+            </div>
+        </div>
+        <div class="faq" style="padding: 20px">
+            <button class="accordion">How can I schedule a meeting?</button>
+            <div class="panel">
+                <p>You can schedule a meeting by emailing us using the email in the navigation bar.</p>
+            </div>
+            <button class="accordion">How can I publish the new website which was made?</button>
+            <div class="panel">
+                <p>We will provide you with our code for the website. You will have to provide your own domain. If you already have a website, then that means that you already have a domain. All you have to do is connect our code to that domain.</p>
+            </div>
+            <button class="accordion">How can I edit my website?</button>
+            <div class="panel">
+                <p>We will provide you with a document meant just for text. Whenever you want to change the text in any way, all you have to do is edit that document and our code will do the rest.</p>
+            </div>
+            <button class="accordion">What if my website uses a website making platform?</button>
+            <div class="panel">
+                <p>That is perfectly fine! You will just have to give us access to your website through that platform and we can redesign your website using that platform.</p>
+            </div>
+            <button class="accordion">What do your websites look like? Can I see some sample work?</button>
+            <div class="panel">
+                <p>Of course! To view some sample work, click <a href="samples.html" target="_self">here</a>.</p>
+            </div>
+            <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+
+                for (i = 0; i < acc.length; i++) {
+                    acc[i].addEventListener("click", function() {
+                        this.classList.toggle("faqactive");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.maxHeight) {
+                            panel.style.maxHeight = null;
+                        } else {
+                            panel.style.maxHeight = panel.scrollHeight + "px";;
+                        }
+                    });
+                }
+            </script>
+        </div>
+    </div>
+    <footer class="bg-dark">
+        Wesbite created by Neta and Daniel Shubin
+    </footer>
+</body>
+
+</html>
